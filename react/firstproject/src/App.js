@@ -12,7 +12,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://rajeevmullapati.pythonanywhere.com/');
+        const response = await fetch('https://rajeevmullapati.pythonanywhere.com/api/video/');
         const data = await response.json();
         setMedia(data.payload);
         setLoading(false); // Set loading to false after data is fetched
